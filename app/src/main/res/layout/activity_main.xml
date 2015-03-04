@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:tools="http://schemas.android.com/tools" 
+				android:layout_width="match_parent"
+				android:layout_height="match_parent" 
+				android:paddingLeft="@dimen/activity_horizontal_margin"
+				android:paddingRight="@dimen/activity_horizontal_margin"
+				android:paddingTop="@dimen/activity_vertical_margin"
+				android:paddingBottom="@dimen/activity_vertical_margin" 
+				tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/sigon"
+        android:id="@+id/logintext"
+        android:layout_width="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <TextView
+        android:id="@+id/idtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/logintext"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/emailid"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <EditText
+        android:id="@+id/idedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/idtext"
+        android:layout_marginLeft="35dp"
+        android:layout_toRightOf="@+id/idtext"
+        android:hint="@string/admin"
+        android:width="200dp"
+        android:background="@drawable/textinputborder"
+        />
+
+
+    <TextView
+        android:id="@+id/pwdtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idtext"
+        android:layout_below="@+id/idtext"
+        android:layout_marginTop="20dp"
+        android:text="@string/Password"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/Pwdedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pwdtext"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/pwdtext"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:width="200dp"
+        android:background="@drawable/textinputborder"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+
+        android:contentDescription="@string/image_on_click" />
+
+
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Pwdedit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="@string/login" />
+
+
+    <CheckBox
+        android:id="@+id/Show_Pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Pwdedit"
+        android:layout_alignLeft="@+id/Pwdedit"
+        android:text="@string/show_password" />
+</RelativeLayout>
